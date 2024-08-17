@@ -79,12 +79,13 @@ Instituições financeiras com sede no Brasil e cadastradas na CVM aptas a opera
 De uma perspectiva interna da plataforma, todos os colaboradores com acesso a ela tais como desenvolvedores, administrativo, compliance, segurança, etc.
 # 10 O que eles estão tentando realizar? 
 Instituições financeiras - estão utilizando os serviços fornecidos pela plataforma TaaS com o objetivo de terceirizar todo processo de gerenciamento e emissão de tokens na plataforma DREX, diminuindo o time-to-market e custos de implantação.
+
 Colaboradores - utilizam os serviços fornecidos pela plataforma para manter a operação do negócio.
 # 11 Qual o pior que pode acontecer?
 Ao criar uma plataforma de tokenização baseada na plataforma DREX, o pior que poderia acontecer, na nossa opinião, seria a fraca adoção do mercado a essa nova tecnologia ou descontinuação do DREX por motivos secundários (políticos, orçamentários, etc). Isso impactaria diretamente a plataforma de tokenização, possivelmente inviabilizando o negócio como um todo.
 # 12 Desenhe uma arquitetura
 Segue abaixo uma proposta de arquitetura para a plataforma de tokenização integrada ao DREX:
-
+![Captura de Tela 2024-08-17 às 09 49 31](https://github.com/user-attachments/assets/ba548056-6173-46c8-9f76-1fa257145e94)
 # 13 Faça uma descrição de cada um dos componentes que você desenhou
 1. API Gateway
 Centraliza e gerencia as solicitações API vindas das instituições financeiras, aplicando regras de segurança, autenticação e roteamento para os microservices apropriados. Utiliza protocolo HTTPS/REST para lcomunicação com clientes
@@ -145,6 +146,7 @@ Todavia, é claro que questões mais técnicas e de infraestrutura foram omitida
 # 21 Poderia ser simplificado e ainda assim ser eficaz? 
 Bem, poderíamos abstrair informações a respeito da Rede DREX e mencionar os microsserviços de sustentação de forma a deixar claro que há vários, mas que estamos apenas citando alguns para que o usuário tenha uma noção da dimensão do trabalho envolvido. No desenho original pode ser que o usuário assuma que os microsserviços de sustentação citados são aqueles já definidos e que não há possibilidades de mudança, o que não é verdade. Entretanto, o foco do diagrama não é esse, apesar de acharmos importante citar que há, sim, vários outros microsserviços envolvidos que não sejam os do core business.
 Proposta de simplificação:
+![Captura de Tela 2024-08-17 às 09 52 08](https://github.com/user-attachments/assets/4c2ccdd7-32ae-4b89-95f5-24e45acaae80)
 
 # 22 Houve alguma discussão importante que vocês tiveram como equipe?
 Acreditamos que uma discussão relevante que tivemos foi relacionada a inserir ou não mais informações a respeito de padrões de segurança, dado que esse é um ponto chave do sucesso da plataforma. Entretanto, apesar de importante, achamos que inserir mais informações sobre segurança tiraria o foco do diagrama (descrito anteriormente) além de inserir no desenho uma série de informações de mais baixo nível que seriam difíceis de representar através de um desenho sem ser por escrito.
@@ -155,21 +157,14 @@ Acreditamos que tenha sido a decisão de não deixar explícito a utilização d
 # 25 Houve algum ponto de decisão sem retorno que o forçou a desistir de uma determinada escolha?
 Podemos citar a questão de expandir em mais detalhes como a integração seria realizada entre lllas plataformas TaaS e DREX. Entretanto, ao analisar as questões técnicas, observou-se uma ampla variedade de informações englobando padrões e políticas do Banco Central, funcionamento da ledge Hyperledger Besu, questões de segurança e autenticação que, juntas, poderiam ser expandidas em um novo diagrama relativamente complexo. Como o objetivo do diagrama é demonstrar a existência dessa integração e os principais atores envolvidos, e não o seu funcionamento e implementação em si, foi decidido por não incluir esses detalhes adicionais.
 # 26 Desenhe 3 Arquiteturas com o projeto que você desenvolveu na aula em cada uma das camadas do C4 (subir somente a imagem jpg/jpeg):
-Nível Contexto
-O diagrama C4 de contexto ilustra as principais interações entre os usuários e sistemas externos dentro da plataforma Token-As-A-Service (TaaS). O sistema é composto por quatro elementos principais: Colaboradores, Clientes, o Sistema Banco Central DREX, e a própria Plataforma TaaS.
-
-Colaboradores são os usuários internos que operam e gerenciam a plataforma, realizando tarefas como criação e configuração de tokens e monitoramento de transações.
-Clientes são os usuários finais que utilizam a plataforma para criar e gerenciar tokens, além de realizar transações.
-O Sistema Banco Central DREX é um sistema regulatório externo com o qual a plataforma TaaS se integra para validação e registro de transações, garantindo conformidade regulatória.
-As interações no diagrama mostram que tanto os Colaboradores quanto os Clientes se comunicam diretamente com a Plataforma TaaS. Esta, por sua vez, interage com o Sistema Banco Central DREX para validar e registrar as transações realizadas na plataforma. A compreensão desse contexto é essencial para garantir que todas as operações sejam realizadas de forma segura, eficiente e em conformidade com as normas regulatórias.
-
-
+# Nível Contexto
+![Captura de Tela 2024-08-17 às 09 54 18](https://github.com/user-attachments/assets/53aa819a-d82d-4c38-9f72-e3c8721b65d8)
 
 # Nível Container
-
-
+![Captura de Tela 2024-08-17 às 09 54 35](https://github.com/user-attachments/assets/42f0de87-b056-408d-958d-e769592e4c4d)
 
 # Nível Componente
+![Captura de Tela 2024-08-17 às 09 54 54](https://github.com/user-attachments/assets/1f012f9f-17c2-401e-b8c5-4191c18a3d95)
 
 
 
