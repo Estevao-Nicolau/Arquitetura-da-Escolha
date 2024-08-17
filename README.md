@@ -13,53 +13,58 @@ Estima-se que, no mundo, a tokenização de ativos movimentará cerca de US$ 16 
 
 # 2 O que esperamos aprender com esse projeto?
 Implementar uma nova TaaS integrada à plataforma DREX é um grande desafio que engloba diversas áreas do conhecimento. Podemos citar:
-Know-how de como realizar a integração de uma nova plataforma TaaS ao DREX, especialmente considerando todo o conhecimento específico relacionado à blockchain da Hyperledger Besu.
-Utilização eficiente de padrões de arquitetura de microsserviços para gerenciar grande volume de dados em tempo real
-Conhecimento e implementação de padrões regulatórios exigidos pelo Banco Central do Brasil para operação na plataforma DREX
-Conhecimento na implementação de mecanismos de tokenização e gerenciamento de tokens, incluindo criação de smart contracts de acordo com as normas e regras exigidas pelo Banco Central do Brasil
-Estar sempre atualizado com as últimas tecnologias e tendências na área de segurança e compliance
+	
+1. Know-how de como realizar a integração de uma nova plataforma TaaS ao DREX, especialmente considerando todo o conhecimento específico relacionado à blockchain 	   da Hyperledger Besu.
+2. Utilização eficiente de padrões de arquitetura de microsserviços para gerenciar grande volume de dados em tempo real
+3. Conhecimento e implementação de padrões regulatórios exigidos pelo Banco Central do Brasil para operação na plataforma DREX
+4. Conhecimento na implementação de mecanismos de tokenização e gerenciamento de tokens, incluindo criação de smart contracts de acordo com as normas e regras exigidas pelo Banco Central do Brasil
+5. Estar sempre atualizado com as últimas tecnologias e tendências na área de segurança e compliance
 
 # 3 Que perguntas precisam ser respondidas?
 ### Com o decorrer do projeto, algumas perguntas importantes precisarão ser respondidas:
 
-Como será a escalabilidade da plataforma à medida que o número de clientes e transações aumentar?
-Quais são exatamente todos os requisitos mínimos de segurança e compliance necessários para operar o negócio?
-Quão trabalhoso será a integração de uma nova plataforma ao DREX?
-Qual o plano de contingência caso haja algum problema na plataforma?
-Quais são os requisitos mínimos exigidos pelo Banco Central para permitir a integração da plataforma ao Sistema Financeiro Nacional via DREX?
-É necessário a utilização de um mecanismo de cache tal como Redis? Se sim, onde?
+1. Como será a escalabilidade da plataforma à medida que o número de clientes e transações aumentar?
+2. Quais são exatamente todos os requisitos mínimos de segurança e compliance necessários para operar o negócio?
+3. Quão trabalhoso será a integração de uma nova plataforma ao DREX?
+4. Qual o plano de contingência caso haja algum problema na plataforma?
+5. Quais são os requisitos mínimos exigidos pelo Banco Central para permitir a integração da plataforma ao Sistema Financeiro Nacional via DREX?
+6. É necessário a utilização de um mecanismo de cache tal como Redis? Se sim, onde?
 
 # 4 Quais são os nossos principais riscos?
 Para garantir o sucesso na implementação de tecnologias como Blockchain e Drex, precisamos responder a várias perguntas e considerar os principais riscos. Em primeiro lugar, devemos definir claramente o problema específico que estamos resolvendo com essas tecnologias e como elas melhoram ou substituem o sistema atual. Também é crucial avaliar a viabilidade técnica, questionando se a infraestrutura tecnológica existente é adequada para suportar a implementação dessas tecnologias e se existem restrições técnicas a serem superadas. Além disso, precisamos entender o impacto econômico do Drex na economia digital e nos sistemas de pagamento do Brasil, bem como seu efeito em consumidores e empresas. As implicações regulatórias também devem ser consideradas, assegurando que estamos em conformidade com as leis nacionais e internacionais. Outro aspecto crítico é a segurança: precisamos garantir a segurança e a privacidade das transações, identificar possíveis vulnerabilidades e planejar como mitigá-las. A adoção e a educação são igualmente importantes; devemos garantir que consumidores e empresas adotem e compreendam essas novas tecnologias, desenvolvendo estratégias de educação e treinamento necessárias.A sustentabilidade e a manutenção também são fatores a serem considerados, pois é necessário avaliar os custos contínuos de operação e manutenção e garantir a sustentabilidade a longo prazo da solução. Entre os principais riscos, destaca-se o risco de ataques cibernéticos, como hacking ou fraudes digitais, que podem comprometer a integridade do Blockchain ou do Drex. Além disso, existe o risco de baixa adoção pelo público devido à falta de entendimento, desconfiança ou dificuldades técnicas. Além disso, precisamos considerar o impacto econômico adverso que a introdução do Drex pode ter, como a desestabilização econômica ou o efeito negativo sobre o sistema financeiro tradicional. Por fim, a reputação é um risco a ser considerado, já que falhas na implementação ou uso podem prejudicar a reputação das instituições envolvidas. Portanto, essas perguntas e riscos precisam ser considerados e endereçados de maneira estratégica para garantir o sucesso na implementação dessas novas tecnologias. 
 
 # 5 Crie um plano para aprender o que precisamos para responder a perguntas específicas.
 
-Como será a escalabilidade da plataforma à medida que o número de clientes e transações aumentar?
+**1. Como será a escalabilidade da plataforma à medida que o número de clientes e transações aumentar?**
 Realizar testes de carga e simulação de alto tráfego para entender como a plataforma se comporta com um aumento no número de clientes e transações além de estabelecer uma estratégia de monitoramento contínuo para identificar gargalos de performance.
 
-Quais são exatamente todos os requisitos mínimos de segurança e compliance necessários para operar o negócio?
+**2. Quais são exatamente todos os requisitos mínimos de segurança e compliance necessários para operar o negócio?**
 Em relação aos requisitos de compliance, consultar as normas e diretrizes do Banco Central do Brasil (BCB) e de entidades reguladoras participantes, além de identificar os requisitos específicos de segurança da informação, proteção de dados (LGPD), prevenção à lavagem de dinheiro (PLD/FT), entre outros.
-
 Em relação a segurança, realizar uma análise de risco detalhada para identificar potenciais vulnerabilidades, garantir que a implementação de criptografia de rede esteja de acordo com as normas regulatórias e estabelecer políticas de governança e auditoria para garantir conformidade contínua.
 
-Quão trabalhoso será a integração de uma nova plataforma ao DREX?
+**3. Quão trabalhoso será a integração de uma nova plataforma ao DREX?**
 Para responder a essa pergunta, será necessário primeiramente analisar a documentação técnica e APIs fornecidas pelo Banco Central para o DREX, além de avaliar a complexidade das chamadas de API, formatos de dados, e requisitos de segurança para a integração. Após, desenvolver um plano de integração e validação das funcionalidades em um ambiente de teste integrado.
 
-Qual o plano de contingência caso haja algum problema na plataforma?
+**4. Qual o plano de contingência caso haja algum problema na plataforma?**
 Será necessário criar um plano de recuperação de desastres (DRP) que inclua redundância de sistemas e failover automático e estabelecer um plano de comunicação para notificar stakeholders em caso de falhas significativas. Durante a operação, é importante conduzir testes periódicos de recuperação para validar a eficácia do plano de contingência e documentar e revisar regularmente o plano de contingência para incorporar melhorias e mudanças.
 
-Quais são os requisitos mínimos exigidos pelo Banco Central para permitir a integração da plataforma ao Sistema Financeiro Nacional via DREX?
+**5. Quais são os requisitos mínimos exigidos pelo Banco Central para permitir a integração da plataforma ao Sistema Financeiro Nacional via DREX?**
 Para isso seria necessário entrar em contato com o Banco Central para obter uma lista detalhada de requisitos para integração com o Sistema Financeiro Nacional via DREX. Também, é importante participar de seminários, workshops ou reuniões organizadas pelo Banco Central para entender as expectativas e melhores práticas.
 
-É necessário a utilização de um mecanismo de cache tal como Redis? Se sim, onde?
+**6. É necessário a utilização de um mecanismo de cache tal como Redis? Se sim, onde?**
 Para realizar essa análise é necessário analisar padrões de acesso e consulta de dados para identificar áreas de alta latência e validar através de testes de carga se a utilização de Redis pode realmente melhorar a performance.
 
  # 6 Crie um plano para reduzir riscos.
 Segue abaixo alguns dos principais planos que podem ser seguidos para mitigar riscos apresentados:
+
 Em um primeiro momento, para definir claramente o problema e a viabilidade técnica, é importante entrar em contato com o Banco Central para obter uma lista detalhada de requisitos para integração com o Sistema Financeiro Nacional via DREX. Também, é importante participar de seminários, workshops ou reuniões organizadas pelo Banco Central para entender em detalhes a plataforma DREX.
+
 Em relação ao impacto econômico e regulação, uma alternativa seria conduzir estudos de impacto econômico para prever como o Drex afetará a economia digital e os sistemas de pagamento no Brasil e avaliar os efeitos potenciais em consumidores, empresas e o sistema financeiro tradicional.
+
 Para garantir a conformidade regulamentar é importante revisar e garantir conformidade com todas as leis e regulamentações nacionais aplicáveis à implementação da plataforma DREX. Além disso, estabelecer canais de comunicação regulares com órgãos reguladores para garantir alinhamento contínuo é outra prática importante.
-Sobre a segurança e privacidade, podemos citar que um bom plano para reduzir riscos seria conduzir auditorias de segurança e testes de penetração regulares para identificar e corrigir vulnerabilidades. Além disso, garantir a correta implementação de criptografia ponta-a-ponta e autenticação multifator
+
+Sobre a segurança e privacidade, podemos citar que um bom plano para reduzir riscos seria conduzir auditorias de segurança e testes de penetração regulares para identificar e corrigir vulnerabilidades. Além disso, garantir a correta implementação de criptografia ponta-a-ponta e autenticação multifator.
+
 Para mitigar os riscos relacionados à adoção e educação referente a nova plataforma, uma ideia seria implementar programas de treinamento para empresas e clientes que utilizarão a plataforma TaaS.
 
 # 7 Quem são as partes interessadas?
@@ -69,58 +74,74 @@ Em um primeiro momento podemos dizer que as partes interessadas nessa nova plata
 
 Focando basicamente nos clientes da plataforma TaaS, eles esperam ganhar:
 
-1. Facilidade de Integração: Uma interface simplificada para integração com o Drex, permitindo que as instituições financeiras possam criar e gerenciar tokens com menor complexidade técnica.
-2. Performance: a utilização de padrões como CQRS, microsserviços e comunicação baseada em eventos garantirá que a plataforma suporte grandes volumes de transações com baixa latência.
-3. Segurança: A plataforma oferecerá uma infraestrutura segura para emissão e transferência de tokens, cumprindo com os requisitos regulatórios e de conformidade.
+**1. Facilidade de Integração:** Uma interface simplificada para integração com o Drex, permitindo que as instituições financeiras possam criar e gerenciar tokens com menor complexidade técnica.
+
+**2. Performance:** a utilização de padrões como CQRS, microsserviços e comunicação baseada em eventos garantirá que a plataforma suporte grandes volumes de transações com baixa latência.
+
+**3. Segurança:** A plataforma oferecerá uma infraestrutura segura para emissão e transferência de tokens, cumprindo com os requisitos regulatórios e de conformidade.
 
 # 9 Quem são os usuários?
 Os principais usuários são:
-Instituições financeiras com sede no Brasil e cadastradas na CVM aptas a operarem no Sistema Financeiro Nacional, incluindo o DREX.
-De uma perspectiva interna da plataforma, todos os colaboradores com acesso a ela tais como desenvolvedores, administrativo, compliance, segurança, etc.
-# 10 O que eles estão tentando realizar? 
-Instituições financeiras - estão utilizando os serviços fornecidos pela plataforma TaaS com o objetivo de terceirizar todo processo de gerenciamento e emissão de tokens na plataforma DREX, diminuindo o time-to-market e custos de implantação.
+1. Instituições financeiras com sede no Brasil e cadastradas na CVM aptas a operarem no Sistema Financeiro Nacional, incluindo o DREX.
 
-Colaboradores - utilizam os serviços fornecidos pela plataforma para manter a operação do negócio.
+3. De uma perspectiva interna da plataforma, todos os colaboradores com acesso a ela tais como desenvolvedores, administrativo, compliance, segurança, etc.
+# 10 O que eles estão tentando realizar? 
+1. Instituições financeiras - estão utilizando os serviços fornecidos pela plataforma TaaS com o objetivo de terceirizar todo processo de gerenciamento e emissão de tokens na plataforma DREX, diminuindo o time-to-market e custos de implantação.
+
+2. Colaboradores - utilizam os serviços fornecidos pela plataforma para manter a operação do negócio.
 # 11 Qual o pior que pode acontecer?
 Ao criar uma plataforma de tokenização baseada na plataforma DREX, o pior que poderia acontecer, na nossa opinião, seria a fraca adoção do mercado a essa nova tecnologia ou descontinuação do DREX por motivos secundários (políticos, orçamentários, etc). Isso impactaria diretamente a plataforma de tokenização, possivelmente inviabilizando o negócio como um todo.
 # 12 Desenhe uma arquitetura
 Segue abaixo uma proposta de arquitetura para a plataforma de tokenização integrada ao DREX:
 ![Captura de Tela 2024-08-17 às 09 49 31](https://github.com/user-attachments/assets/ba548056-6173-46c8-9f76-1fa257145e94)
 # 13 Faça uma descrição de cada um dos componentes que você desenhou
-1. API Gateway
+
+**1. API Gateway:**
 Centraliza e gerencia as solicitações API vindas das instituições financeiras, aplicando regras de segurança, autenticação e roteamento para os microservices apropriados. Utiliza protocolo HTTPS/REST para lcomunicação com clientes
-2. Auth0 Authentication Server
+
+**2. Auth0 Authentication Server:**
 Autentica e autoriza os usuários e clientes da plataforma, integrando-se com o API Gateway.
-3. Token Manager
+
+**3. Token Manager:**
 Microsserviço responsável pela criação, emissão, e gerenciamento de tokens. Conecta-se com o Smart Contract Manager através da Fila de Mensagens. Além disso, utiliza CQRS para separar comandos de consultas através da utilização de um Event Store e Read Storage para cada microsserviço, garantindo eficiência em operações de grande volume.
-4. Smart Contract Manager
+
+**4. Smart Contract Manager:**
 Microsserviço responsável por gerenciar o ciclo de vida dos contratos inteligentes, desde a criação até a implementação e monitoramento. Comunica-se com o Microsserviço Drex Integration através da Fila de Mensagens.
-5. Drex Integration
+
+**5. Drex Integration:**
 Microsserviço responsável por auxiliar na integração com a rede Drex, baseada em Hyperledger Besu, para registrar e gerenciar contratos e transações na blockchain. Utiliza protocolo RPC para comunicação.
-Protocolos: Utiliza RPC e outros protocolos específicos da blockchain.
-Ponto Crítico: Latência na comunicação com a blockchain e garantias de consistência e integridade das transações registradas.
-7. Event Store
+- Protocolos: Utiliza RPC e outros protocolos específicos da blockchain.
+- Ponto Crítico: Latência na comunicação com a blockchain e garantias de consistência e integridade das transações registradas.
+
+**6. Event Store:**
 Banco de Dados único para cada microsserviço
-	7. Read Storage
+
+**7. Read Storage:**
 Materialize View utilizada pelo query model do padrão CQRS. Esse banco de dados de leitura é atualizado através eventos enviados pelo Command Model utilizando a Fila de Mensagens 
-8. Microsserviços de Sustentação
+
+**8. Microsserviços de Sustentação:**
 Aqui é citado um conjunto de microsserviços extras mas considerados fundamentais para a operação/sustentação da plataforma TaaS. Apesar de não estarem diretamente ligados ao core business, eles são citados aqui com o intuito de enfatizar a existência de complexidade adicional envolvida na criação da plataforma.
-9. Fila de Mensagens
+
+**9. Fila de Mensagens:**
 Esse componente representa o padrão pub-sub onde microsserviços se comunicam via eventos. É um padrão útil para diminuir o acoplamento entre serviços, ser escalável e tolerante a falhas.
-10. Command Service / Command Model
+
+**10. Command Service / Command Model:**
 Modelo de escrita utilizado pelo padrão CQRS
-11. Query Model / Query Model
+
+**11. Query Model / Query Model:**
 Modelo de leitura utilizado pelo padrão CQRS
-12. REST API
+
+**12. REST API:**
 Adaptador do microsserviço utilizado para comunicação via REST API
 
-14 HyperLedger Besu - Fullnode
+**13. HyperLedger Besu - Fullnode:**
 Nós criados através da plataforma DREX para permitir a conexão de agentes externos à plataforma.
+
 # 14. Descreva requisitos que você (s) considera importante e por quê? (Mínimo 5) 
-Segurança - dado que estamos propondo uma solução para o sistema financeiro, a implementação de uma política de segurança sólida e robusta é fator essencial para a credibilidade e sucesso da solução. Utilização de API Gateway, Servidor de autenticação Auth0, cripitografia de ponta a ponta, implementação de políticas de controle, teste e validação entre outros pontos, são fatores fundamentais.
-	Escalabilidade - Arquitetura baseada em microservices que permite a escala horizontal de componentes individuais, especialmente para o Token Manager e o Drex Integration.
-	Comunicação em Tempo Real - Utilização de uma fila de mensagens para comunicação assíncrona e baseada em eventos entre microservices, essencial para a integridade e sincronização dos estados na plataforma.
-Integração com a Plataforma Drex - A conexão com a rede DLT do Drex via Drex Integration deve ser eficiente e segura, utilizando protocolos como RPC e garantindo a consistência dos registros na blockchain.
+**Segurança -** dado que estamos propondo uma solução para o sistema financeiro, a implementação de uma política de segurança sólida e robusta é fator essencial para a credibilidade e sucesso da solução. Utilização de API Gateway, Servidor de autenticação Auth0, cripitografia de ponta a ponta, implementação de políticas de controle, teste e validação entre outros pontos, são fatores fundamentais.
+**Escalabilidade -** Arquitetura baseada em microservices que permite a escala horizontal de componentes individuais, especialmente para o Token Manager e o Drex Integration.
+**Comunicação em Tempo Real -** Utilização de uma fila de mensagens para comunicação assíncrona e baseada em eventos entre microservices, essencial para a integridade e sincronização dos estados na plataforma.
+**Integração com a Plataforma Drex -** A conexão com a rede DLT do Drex via Drex Integration deve ser eficiente e segura, utilizando protocolos como RPC e garantindo a consistência dos registros na blockchain.
 Latência da Rede e Desempenho - Minimizar a latência, especialmente nas interações com a plataforma Drex, que pode ter requisitos específicos de performance.
 # 15 Sobre o que o diagrama ajuda você a raciocinar/pensar?
 O diagrama apresenta os principais componentes necessários para a implementação da plataforma TaaS, destacando os principais usuários da plataforma e a integração necessária com a rede do Sistema Financeiro Nacional e os principais microsserviços do core business. Sobre a implementação da plataforma, o diagrama apresenta em alto nível alguns dos principais padrões e conceitos que devem ser levados em consideração, tais como padrão de microsserviços, pub-sub (eventos), autenticação via API Gateway, que são padrões relacionados a questões fundamentais tais como comunicação em tempo real, escalabilidade e segurança. 
@@ -128,14 +149,14 @@ Com a criação de microsserviços independentes, o diagrama nos permite tratar 
 Adicionar o conjunto de Microsserviços de Sustentação nos faz refletir a respeito da complexidade adicional necessária para criar uma plataforma TaaS completa.
 O diagrama também abre espaço para discussões relacionadas à integração com a plataforma DREX. Mencionar de forma explícita a Rede do Sistema Financeiro Nacional, incluindo as entidades validadoras (Banco Central e SELIC), também abre espaço para discussões relacionadas a questões regulatórias existentes para a operação da plataforma proposta.
 # 16 Quais são os padrões essenciais no diagrama?
-Padrão CQRS: é a separação das operações de leitura e escrita. Isso permite a adoção de ferramentas otimizadas para cada uma das operações e aumento da performance, já que transações serão executadas em um banco separado do que escrita.
-	Padrão Pub-Sub / Fila de Mensagens: Comunicação assíncrona entre microsserviços baseada em eventos a fim de diminuir o acoplamento entre eles, tornar o sistema escalável, tolerante a falhas e flexível.
-	API Gateway: Ponto de entrada único para requisições HTTP de REST APIs. Além disso, o API Gateway centraliza questões de autenticação e autorização, roteamento de requisições, incluindo questões de monitoramento e logging.
-	Padrão Microsserviço: é um padrão que permite dividir e atacar o problema de forma isolado, onde objetiva-se a criação de um novo microsserviço cada subdomínio de negócio com o mínimo de acoplamento possível entre eles. 
+**Padrão CQRS:** é a separação das operações de leitura e escrita. Isso permite a adoção de ferramentas otimizadas para cada uma das operações e aumento da performance, já que transações serão executadas em um banco separado do que escrita.
+**Padrão Pub-Sub / Fila de Mensagens:** Comunicação assíncrona entre microsserviços baseada em eventos a fim de diminuir o acoplamento entre eles, tornar o sistema escalável, tolerante a falhas e flexível.
+**API Gateway:** Ponto de entrada único para requisições HTTP de REST APIs. Além disso, o API Gateway centraliza questões de autenticação e autorização, roteamento de requisições, incluindo questões de monitoramento e logging.
+**Padrão Microsserviço:** é um padrão que permite dividir e atacar o problema de forma isolado, onde objetiva-se a criação de um novo microsserviço cada subdomínio de negócio com o mínimo de acoplamento possível entre eles. 
 # 17 Existem padrões ocultos?
 Sobre padrões ocultos, pode-se citar:
-	Utilização de Redis Cache: Esse padrão não é explicitamente mencionado, mas é uma opção bem difundida no mercado para armazenar em cache dados frequentemente acessados ou demorados de processar, melhorando a performance e reduzindo a latência.
-	Balanceamento de Carga: Distribui o tráfego de entrada entre os microsserviços para garantir a disponibilidade e a escalabilidade. O balanceamento de carga não foi explicitamente mencionado por ser considerado uma otimização de infraestrutura, logo, não sendo objetivo principal neste diagrama.
+	**Utilização de Redis Cache:** Esse padrão não é explicitamente mencionado, mas é uma opção bem difundida no mercado para armazenar em cache dados frequentemente acessados ou demorados de processar, melhorando a performance e reduzindo a latência.
+	**Balanceamento de Carga:** Distribui o tráfego de entrada entre os microsserviços para garantir a disponibilidade e a escalabilidade. O balanceamento de carga não foi explicitamente mencionado por ser considerado uma otimização de infraestrutura, logo, não sendo objetivo principal neste diagrama.
 # 18 Qual é o Metamodelo? 
 Metamodelo baseado em domínio, principalmente pelo fato de enfatizarmos a utilização do padrão de microsserviço.
 # 19 Pode ser discernido no diagrama único? 
@@ -165,7 +186,6 @@ Podemos citar a questão de expandir em mais detalhes como a integração seria 
 
 # Nível Componente
 ![Captura de Tela 2024-08-17 às 09 54 54](https://github.com/user-attachments/assets/1f012f9f-17c2-401e-b8c5-4191c18a3d95)
-
 
 
 
