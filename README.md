@@ -139,10 +139,15 @@ Nós criados através da plataforma DREX para permitir a conexão de agentes ext
 
 # 14. Descreva requisitos que você (s) considera importante e por quê? (Mínimo 5) 
 **Segurança -** dado que estamos propondo uma solução para o sistema financeiro, a implementação de uma política de segurança sólida e robusta é fator essencial para a credibilidade e sucesso da solução. Utilização de API Gateway, Servidor de autenticação Auth0, cripitografia de ponta a ponta, implementação de políticas de controle, teste e validação entre outros pontos, são fatores fundamentais.
+
 **Escalabilidade -** Arquitetura baseada em microservices que permite a escala horizontal de componentes individuais, especialmente para o Token Manager e o Drex Integration.
+
 **Comunicação em Tempo Real -** Utilização de uma fila de mensagens para comunicação assíncrona e baseada em eventos entre microservices, essencial para a integridade e sincronização dos estados na plataforma.
+
 **Integração com a Plataforma Drex -** A conexão com a rede DLT do Drex via Drex Integration deve ser eficiente e segura, utilizando protocolos como RPC e garantindo a consistência dos registros na blockchain.
-Latência da Rede e Desempenho - Minimizar a latência, especialmente nas interações com a plataforma Drex, que pode ter requisitos específicos de performance.
+
+**Latência da Rede e Desempenho -** Minimizar a latência, especialmente nas interações com a plataforma Drex, que pode ter requisitos específicos de performance.
+
 # 15 Sobre o que o diagrama ajuda você a raciocinar/pensar?
 O diagrama apresenta os principais componentes necessários para a implementação da plataforma TaaS, destacando os principais usuários da plataforma e a integração necessária com a rede do Sistema Financeiro Nacional e os principais microsserviços do core business. Sobre a implementação da plataforma, o diagrama apresenta em alto nível alguns dos principais padrões e conceitos que devem ser levados em consideração, tais como padrão de microsserviços, pub-sub (eventos), autenticação via API Gateway, que são padrões relacionados a questões fundamentais tais como comunicação em tempo real, escalabilidade e segurança. 
 Com a criação de microsserviços independentes, o diagrama nos permite tratar cada aspecto da plataforma de forma isolada, facilitando o desenvolvimento, testes e manutenção. Isso também torna possível escalar e aprimorar partes específicas sem afetar o sistema como um todo.
